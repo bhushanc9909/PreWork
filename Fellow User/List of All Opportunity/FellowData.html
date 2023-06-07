@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="List of Fellow Opportunity" icon-name="custom:custom11">
+         <template if:true={fellowList}>
+             <lightning-datatable
+                key-field="Id"
+                data={fellowList}
+                columns={Columns}
+                hide-checkbox-column="true">
+            </lightning-datatable>
+         </template>
+    </lightning-card> 
+ </template>
