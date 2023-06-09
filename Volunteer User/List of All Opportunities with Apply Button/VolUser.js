@@ -10,6 +10,7 @@ export default class V1 extends NavigationMixin(LightningElement) {
         {label: 'School Name', fieldName : 'School_Name__c', type : 'text'},
         {label: 'Classroom ID', fieldName : 'Classroom_ID__c', type : 'text'},
         {label: 'Subject', fieldName : 'Subject__c', type : 'text'},
+        {label: 'Status', fieldName : 'Status__c'},
         {
             label: 'Apply',
             type: 'button',
