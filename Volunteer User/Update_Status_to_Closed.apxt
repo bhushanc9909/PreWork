@@ -1,0 +1,9 @@
+trigger Update_Status_to_Closed on Volunteer_Opportunity__c (before insert, before update) {
+    for(Volunteer_Opportunity__c vol : trigger.new){
+        if(vol.Volunteer_Name__c != null && vol.Volunteer_Email__c != null){
+            vol.Status__c = 'Closed';
+        }else if(vol.Volunteer_Name__c == null && vol.Volunteer_Email__c == null){
+             vol.Status__c = 'Open';
+        }
+    }
+}
